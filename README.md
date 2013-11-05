@@ -133,8 +133,8 @@ haproxy_lb 'rabbitmq' do
     'rmq2 10.0.0.2:5672 check inter 10s rise 2 fall 3',
     'rmq3 10.0.0.3:5672 check inter 10s rise 2 fall 3',
     'rmq4 10.0.0.4:5672 check inter 10s rise 2 fall 3',
-    'maxconn' => 20000,
-    'balance' => 'roundrobin'
+    'maxconn 20000',
+    'balance roundrobin'
   ])
 end
 ```
